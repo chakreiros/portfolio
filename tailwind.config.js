@@ -1,4 +1,7 @@
+import defaultTheme from "tailwindcss/defaultTheme";
+
 /** @type {import('tailwindcss').Config} */
+
 export default {
   darkMode: ["class"],
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -10,6 +13,9 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {},
+    },
+    fontFamily: {
+      Amatic: ["Amatic SC", ...defaultTheme.fontFamily.sans],
     },
   },
   // eslint-disable-next-line no-undef

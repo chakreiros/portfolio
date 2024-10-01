@@ -1,7 +1,13 @@
 import "./App.css";
 
+import Header from "@/Components/Header";
+
 function App() {
-  return <>Logo algo vem aí</>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default App;
