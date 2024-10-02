@@ -1,6 +1,8 @@
 import "./App.css";
 
 import Header from "@/Components/Header";
+import { Toaster } from "@/Components/ui/toaster";
+
 import { Dialog, DialogContent, DialogTrigger } from "@/Components/ui/dialog";
 
 import cardBackground from "@/assets/card-bg.jpg";
@@ -69,6 +71,7 @@ function App() {
           </div>
         </div>
       </main>
+      <Toaster />
     </>
   );
 }
