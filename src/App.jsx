@@ -12,7 +12,7 @@ function App() {
 
       <main>
         <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-          <div className="relative isolate overflow-hidden bg-green-700 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+          <div className="max-[768px]:flex max-[768px]:flex-col max-[768px]:items-center relative isolate overflow-hidden bg-green-700 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
             <svg
               viewBox="0 0 1024 1024"
               aria-hidden="true"
@@ -33,7 +33,7 @@ function App() {
               </defs>
             </svg>
 
-            <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+            <div className=" max-w-md text-center lg:mx-0 lg:text-left p-16">
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
                 Estamos ansiosos para abrir os portões
                 <br />
@@ -57,7 +57,7 @@ function App() {
                 </DialogContent>
               </Dialog>
             </div>
-            <div className="relative ">
+            <div className="relative">
               <img
                 alt="App screenshot"
                 src={cardBackground}
