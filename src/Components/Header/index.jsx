@@ -36,7 +36,7 @@ export default function Header() {
             onClick={() => {
               toast({
                 title: "Esperando nossos parceiros nos entregar as chaves...",
-                description: "Que tal ser avisado quando isso acontecer/",
+                description: "Que tal ser avisado quando isso acontecer",
                 action: (
                   <ToastAction altText="Try again" onClick={showIframe}>
                     Fique por dentro
