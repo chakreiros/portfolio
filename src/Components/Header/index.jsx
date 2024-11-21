@@ -1,4 +1,4 @@
-import logoChakreiros from "@/assets/chakreiros.png";
+import logoChakreiros from "@/assets/images/chakreiros.png";
 
 export default function Header() {
   return (

@@ -1,18 +1,25 @@
+//#region imports
 import React from "react";
 
+//#region ui components
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardTitle } from "@/components/ui/card";
-
-import { MdAnnouncement } from "react-icons/md";
-import { AiFillSchedule } from "react-icons/ai";
-import { PiRobotFill } from "react-icons/pi";
-import { FaCamera } from "react-icons/fa";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+//#endregion
+
+//#region icons
+import { MdAnnouncement } from "react-icons/md";
+import { AiFillSchedule } from "react-icons/ai";
+import { PiRobotFill } from "react-icons/pi";
+import { FaCamera } from "react-icons/fa";
+
+//#endregion
+//#endregion
 
 const features = [
   {
@@ -49,6 +56,11 @@ export function FeatureCard() {
     FaCamera,
   };
 
+  function handleCardClick(id) {
+    const feature = document.getElementById(id);
+    feature.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <div className="cards-wrapper flex gap-[2rem] items-center justify-center">
       {features.map((feature, index) => (
@@ -69,6 +81,7 @@ export function FeatureCard() {
             <Button
               variant="outline"
               className="border border-[#41693c] rounded-full uppercase text-[#41693c] font-bold text-lg"
+              onClick={() => handleCardClick(feature.id)}
             >
               Saiba Mais
             </Button>
@@ -84,7 +97,7 @@ export function FeatureAccordion() {
     <section id="features" className="px-20">
       {features.map((feature, index) => (
         <Accordion key={index} type="single" collapsible className="w-full">
-          <AccordionItem value={`item-${index}`}>
+          <AccordionItem value={`item-${index}`} id={feature.id}>
             <AccordionTrigger>{feature.title}</AccordionTrigger>
             <AccordionContent>{feature.description}</AccordionContent>
           </AccordionItem>

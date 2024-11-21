@@ -23,27 +23,17 @@
   font-size: 1.6rem;
 }
 
-body {
-  height: 100vh;
-}
-#root {
-  height: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-}
-
 h1 {
   color: #fff;
 }
 h2 {
   color: #1d2b1b;
   font-size: 3.8rem;
+}
+
+h3 {
+  color: #1d2b1b;
+  font-size: 2.8rem;
 }
 
 p {

@@ -11,9 +11,9 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       backgroundImage: {
-        banner: "url('/src/assets/banner.png')",
+        banner: "url('/src/assets/images/banner.png')",
         description_graphic_element:
-          "url('/src/assets/description-graph-element.png')",
+          "url('/src/assets/images/description-graph-element.png')",
       },
       keyframes: {
         "accordion-down": {
