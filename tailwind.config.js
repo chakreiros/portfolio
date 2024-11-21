@@ -1,5 +1,3 @@
-import defaultTheme from "tailwindcss/defaultTheme";
-
 /** @type {import('tailwindcss').Config} */
 
 export default {
@@ -13,7 +11,9 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       backgroundImage: {
-        banner: "url('/src/assets/bg.jpg')",
+        banner: "url('/src/assets/banner.png')",
+        description_graphic_element:
+          "url('/src/assets/description-graph-element.png')",
       },
       keyframes: {
         "accordion-down": {
@@ -37,9 +37,6 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
-    },
-    fontFamily: {
-      Amatic: ["Amatic SC", ...defaultTheme.fontFamily.sans],
     },
   },
   // eslint-disable-next-line no-undef

@@ -6,8 +6,8 @@ export default function Banner() {
       id="banner"
       className="h-1/2 p-10 w-full overflow-hidden shadow-md relative flex justify-between items-end"
     >
-      <div className="absolute inset-0 blur-sm bg-banner bg-center"></div>
-      <h1 className="relative z-10 text-white -top-32 drop-shadow-sm font-extrabold text-[13.3rem] leading-none uppercase">
+      <div className="absolute inset-0 blur-sm bg-banner bg-center bg-no-repeat bg-cover"></div>
+      <h1 className="relative z-10 text-white drop-shadow-sm font-extrabold text-[13.3rem] leading-none uppercase">
         Dono <br />
         de chácara? <br />
         anuncie

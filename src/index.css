@@ -2,9 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "garet heavy";
+  src: url("../src/assets/fonts/Garet-Heavy.otf");
+}
+@font-face {
+  font-family: "garet book";
+  src: url("../src/assets/fonts/Garet-Book.otf");
+}
+
 :root {
+  --garetHeavy: "garet heavy", sans-serif;
+  --garetBook: "garet book", sans-serif;
   height: 100vh;
   font-size: 62.5%;
+  font-family: var(--garetHeavy);
 }
 
 * {
@@ -18,7 +30,23 @@ body {
   height: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
+
 h1 {
   color: #fff;
-  font-size: 3.6rem;
+}
+h2 {
+  color: #1d2b1b;
+  font-size: 3.8rem;
+}
+
+p {
+  font-family: var(--garetBook);
+  font-weight: 800;
 }
