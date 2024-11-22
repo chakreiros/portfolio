@@ -3,6 +3,7 @@ import Banner from "@/components/Banner";
 import SocialProof from "@/components/SocialProof";
 
 import { FeatureCard, FeatureAccordion } from "@/components/Features";
+import Form from "@/components/Form";
 import Header from "@/components/Header";
 
 import { Separator } from "@/components/ui/separator";
@@ -45,11 +46,12 @@ export default function Home() {
         </section>
 
         <Separator />
-
         <SocialProof />
         <Separator />
 
         <FeatureAccordion />
+        <Separator />
+        <Form />
       </main>
     </div>
   );

@@ -40,3 +40,10 @@ p {
   font-family: var(--garetBook);
   font-weight: 800;
 }
+
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+  width: 600px;
+}
