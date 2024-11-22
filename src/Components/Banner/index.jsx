@@ -16,7 +16,10 @@ export default function Banner() {
         asChild
         className="w-[20rem] h-[6rem] z-10 rounded-full text-[2rem] text-white uppercase"
       >
-        <a target="_blank" href="https://wa.me/5519991841341">
+        <a
+          target="_blank"
+          href="https://wa.me/5519991841341?text=Olá!%20Quero%20conhecer%20o%20Chakreiros!"
+        >
           Conheça
         </a>
       </Button>

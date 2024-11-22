@@ -46,3 +46,19 @@ p {
   font: 14px Helvetica, Arial, sans-serif;
   width: 60rem;
 }
+
+#AccordionContent {
+  font-family: var(--garetBook);
+}
+
+#banner {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}

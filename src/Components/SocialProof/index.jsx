@@ -1,5 +1,6 @@
 //#region imports
-import React from "react";
+import React, { useState } from "react";
+import Modal from "react-modal";
 import Autoplay from "embla-carousel-autoplay";
 
 //#region ui components
@@ -22,6 +23,9 @@ import voOrlando3 from "@/assets/images/costumers/vo-orlando/vo-orlando(3).jpg";
 //#endregion
 //#endregion
 export default function SocialProof() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
   const bellyImages = [belly, belly1, belly2, belly3];
   const voOrlandoImages = [voOrlando1, voOrlando2, voOrlando3];
 
@@ -31,6 +35,15 @@ export default function SocialProof() {
   const plugin2 = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
+
+  const openModal = image => {
+    setSelectedImage(image);
+    setIsModalOpen(true);
+  };
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedImage(null);
+  };
   return (
     <section>
       <div className="flex justify-evenly">
@@ -54,7 +67,11 @@ export default function SocialProof() {
             {Array.from({ length: bellyImages.length }).map((_, index) => (
               <CarouselItem key={index} className="basis-1/2">
                 <div>
-                  <img src={bellyImages[index]} className="max-w-1/3" />
+                  <img
+                    src={bellyImages[index]}
+                    className="max-w-1/3"
+                    onClick={() => openModal(bellyImages[index])}
+                  />
                 </div>
               </CarouselItem>
             ))}
@@ -70,12 +87,31 @@ export default function SocialProof() {
             {Array.from({ length: voOrlandoImages.length }).map((_, index) => (
               <CarouselItem key={index} className="basis-1/2">
                 <div>
-                  <img src={voOrlandoImages[index]} className="max-w-1/3" />
+                  <img
+                    src={voOrlandoImages[index]}
+                    className="max-w-1/3"
+                    onClick={() => openModal(voOrlandoImages[index])}
+                  />
                 </div>
               </CarouselItem>
             ))}
           </CarouselContent>
         </Carousel>
+        <Modal
+          isOpen={isModalOpen}
+          onRequestClose={closeModal}
+          contentLabel="Imagem"
+          className="max-w-[75vw] flex flex-col items-start justify-self-center p-10 mt-[5vh] border border-gray-300 rounded-[1.6rem] shadow-lg"
+        >
+          <button onClick={closeModal}>X</button>
+          {selectedImage && (
+            <img
+              src={selectedImage}
+              alt="Imagem selecionada"
+              className="modal-image"
+            />
+          )}
+        </Modal>
       </div>
     </section>
   );

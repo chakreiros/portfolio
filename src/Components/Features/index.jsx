@@ -26,25 +26,29 @@ const features = [
     id: "announcement",
     icon: "MdAnnouncement",
     title: "Plataforma simples",
-    description: "Descrição detalhada de Plataforma simples",
+    description:
+      "Nossa plataforma foi desenvolvida para ser intuitiva e de fácil navegação, proporcionando uma experiência agradável e eficiente para os usuários. Com um design moderno e limpo, os visitantes podem encontrar rapidamente o que procuram sem complicações. As funcionalidades são dispostas de maneira lógica e acessível, garantindo que até mesmo aqueles com menos familiaridade com tecnologia possam utilizá-la sem dificuldades.",
   },
   {
     id: "chatbot",
     icon: "PiRobotFill",
     title: "Bot de atendimento",
-    description: "Descrição detalhada de Bot de atendimento",
+    description:
+      "Nosso bot de atendimento está sempre disponível para oferecer suporte e esclarecer dúvidas. Programado com inteligência artificial avançada, ele é capaz de entender e responder às perguntas mais frequentes dos usuários de maneira rápida e precisa. Além disso, ele pode direcionar os visitantes para os recursos ou informações específicos de que precisam, melhorando significativamente a experiência do usuário e reduzindo o tempo de espera por suporte humano.",
   },
   {
     id: "photos",
     icon: "FaCamera",
     title: "fotos e vídeos profissionais",
-    description: "Descrição detalhada de fotos e vídeos profissionais",
+    description:
+      "A qualidade visual do seu conteúdo faz toda a diferença. Por isso, nossa landing page conta com fotos e vídeos profissionais que destacam o melhor do seu produto ou serviço. Cada imagem e vídeo é escolhido e produzido com cuidado, garantindo uma apresentação elegante e atraente. Isso não só melhora a estética do seu site, mas também ajuda a transmitir a credibilidade e o profissionalismo da sua marca.",
   },
   {
     id: "schedule-control",
     icon: "AiFillSchedule",
     title: "Agenda automatizada",
-    description: "Descrição detalhada de Agenda automatizada",
+    description:
+      "Simplifique a gestão de compromissos com nossa agenda automatizada. Esse recurso permite que os usuários marquem consultas, reuniões ou eventos de maneira simples e rápida, diretamente pela página. A integração com sistemas de calendário garante que todos os agendamentos sejam sincronizados automaticamente, evitando conflitos e facilitando o gerenciamento do seu tempo. A confirmação instantânea e os lembretes automáticos ajudam a reduzir ausências e atrasos, garantindo uma operação mais eficiente.",
   },
 ];
 
@@ -99,7 +103,12 @@ export function FeatureAccordion() {
         <Accordion key={index} type="single" collapsible className="w-full">
           <AccordionItem value={`item-${index}`} id={feature.id}>
             <AccordionTrigger>{feature.title}</AccordionTrigger>
-            <AccordionContent>{feature.description}</AccordionContent>
+            <AccordionContent
+              id="AccordionContent"
+              className="leading-10 font-[garet book]"
+            >
+              {feature.description}
+            </AccordionContent>
           </AccordionItem>
         </Accordion>
       ))}
