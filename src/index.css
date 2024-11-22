@@ -44,9 +44,10 @@ p {
 }
 
 #mc_embed_signup {
+  width: 100%;
+  min-width: 40rem;
   clear: left;
   font: 14px Helvetica, Arial, sans-serif;
-  width: 60rem;
 }
 
 #AccordionContent {
