@@ -17,7 +17,7 @@ export default function Form() {
   const [phone, setPhone] = useState("");
 
   return (
-    <div className="flex p-10 justify-around items-center bg-[#dbe1c8]">
+    <div className="flex p-10 justify-around items-center bg-[#dbe1c8] max-md:flex-col-reverse max-md:gap-20">
       <div className="flex flex-col items-center text-center gap-10">
         <img
           src={chakreirosLogo}
@@ -48,7 +48,7 @@ export default function Form() {
           </a>
         </div>
       </div>
-      <div id="mc_embed_shell">
+      <div id="mc_embed_shell ">
         <div id="mc_embed_signup" className="p-10 bg-[#b6cd9f] rounded-xl">
           <form
             action="https://chakreiros.us15.list-manage.com/subscribe/post?u=a24e6ffbf8c4e00d5bbc47274&amp;id=016c7ea8c6&amp;f_id=00b7b7e0f0"

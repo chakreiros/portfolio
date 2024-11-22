@@ -26,7 +26,7 @@ export default function Home() {
         </section>
         <Separator />
         <section className="flex p-10 gap-10">
-          <div className="flex flex-col w-full items-center gap-24 p-10 bg-description_graphic_element bg-right-bottom bg-auto bg-no-repeat">
+          <div className="flex flex-col w-full items-center gap-24 p-10 bg-description_graphic_element bg-right-bottom bg-auto bg-no-repeat max-md:h-[70vh]">
             <h2 className="uppercase">
               Mais que lugares, <br /> experiências...
             </h2>
@@ -41,7 +41,7 @@ export default function Home() {
           <img
             src={asideDescription}
             alt=""
-            className="max-w-[50vw] max-h-screen rounded-2xl shadow-[0px_15px_20px_50x_rgba(0,0,0,1)]"
+            className="max-w-[50vw] max-h-screen rounded-2xl shadow-[0px_15px_20px_50x_rgba(0,0,0,1)] max-md:hidden"
           />
         </section>
 

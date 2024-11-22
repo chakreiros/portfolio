@@ -48,12 +48,18 @@ export default function SocialProof() {
     <section>
       <div className="flex justify-evenly">
         <div className="text-center">
-          <img src={bellyLogo} className="rounded-full w-[33vh] m-auto" />
-          <h3>Chácara Belly</h3>
+          <img
+            src={bellyLogo}
+            className="rounded-full w-[33vh] m-auto max-md:max-w-[25vw]"
+          />
+          <h3 className="max-md:text-[2rem]">Chácara Belly</h3>
         </div>
         <div className="text-center">
-          <img src={voOrlandoLogo} className="rounded-full w-[33vh] m-auto" />
-          <h3>Chácara do Vô Orlando</h3>
+          <img
+            src={voOrlandoLogo}
+            className="rounded-full w-[33vh] m-auto max-md:max-w-[25vw]"
+          />
+          <h3 className="max-md:text-[2rem]">Chácara do Vô Orlando</h3>
         </div>
       </div>
       <div className="flex justify-center items-center align-middle w-fit h-[33vh] gap-10">
@@ -65,11 +71,11 @@ export default function SocialProof() {
         >
           <CarouselContent>
             {Array.from({ length: bellyImages.length }).map((_, index) => (
-              <CarouselItem key={index} className="basis-1/2">
+              <CarouselItem key={index}>
                 <div>
                   <img
                     src={bellyImages[index]}
-                    className="max-w-1/3"
+                    className="max-w-1/3 max-md:max-w-full"
                     onClick={() => openModal(bellyImages[index])}
                   />
                 </div>
@@ -78,18 +84,18 @@ export default function SocialProof() {
           </CarouselContent>
         </Carousel>
         <Carousel
-          className="w-fit h-full"
+          className="w-fit h-full relative"
           plugins={[plugin2.current]}
           onMouseEnter={plugin2.current.stop}
           onMouseLeave={plugin2.current.reset}
         >
           <CarouselContent className="relative">
             {Array.from({ length: voOrlandoImages.length }).map((_, index) => (
-              <CarouselItem key={index} className="basis-1/2">
+              <CarouselItem key={index}>
                 <div>
                   <img
                     src={voOrlandoImages[index]}
-                    className="max-w-1/3"
+                    className="max-w-1/3 max-md:max-w-full"
                     onClick={() => openModal(voOrlandoImages[index])}
                   />
                 </div>
@@ -101,7 +107,7 @@ export default function SocialProof() {
           isOpen={isModalOpen}
           onRequestClose={closeModal}
           contentLabel="Imagem"
-          className="max-w-[75vw] flex flex-col items-start justify-self-center p-10 mt-[5vh] border border-gray-300 rounded-[1.6rem] shadow-lg"
+          className="max-w-[75vw] flex flex-col items-start justify-self-center self-center p-10 border border-gray-300 rounded-[1.6rem] shadow-lg"
         >
           <button onClick={closeModal}>X</button>
           {selectedImage && (

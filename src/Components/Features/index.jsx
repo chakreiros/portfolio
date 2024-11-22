@@ -66,7 +66,7 @@ export function FeatureCard() {
   }
 
   return (
-    <div className="cards-wrapper flex gap-[2rem] items-center justify-center">
+    <div className="cards-wrapper flex gap-[2rem] items-center justify-center max-md:flex-wrap max-md:gap-[6rem]">
       {features.map((feature, index) => (
         <Card
           key={index}
