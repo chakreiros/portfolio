@@ -25,7 +25,9 @@ export default function Form() {
           className="h-auto w-[25rem]"
         />
 
-        <h3 className="text-[#36802d]">Mais do que lugares... Experiências!</h3>
+        <p className="text-[#36802d] text-[2.2rem]">
+          Mais do que lugares... Experiências!
+        </p>
 
         <div className="flex justify-around gap-10">
           <a
@@ -48,7 +50,7 @@ export default function Form() {
           </a>
         </div>
       </div>
-      <div id="mc_embed_shell ">
+      <div id="mc_embed_shell">
         <div id="mc_embed_signup" className="p-10 bg-[#b6cd9f] rounded-xl">
           <form
             action="https://chakreiros.us15.list-manage.com/subscribe/post?u=a24e6ffbf8c4e00d5bbc47274&amp;id=016c7ea8c6&amp;f_id=00b7b7e0f0"
@@ -60,14 +62,14 @@ export default function Form() {
             noValidate=""
           >
             <div id="mc_embed_signup_scroll">
-              <h2>Quero Fazer Parte!</h2>
+              <h2 className="text-[#234c20]">Quero Fazer Parte!</h2>
             </div>
             <div className="indicates-required">
               <span className="asterisk">*</span> indicates required
             </div>
             <div className="mc-field-group">
               <label htmlFor="mce-EMAIL">
-                Endereço de e-mail <span className="asterisk">*</span>
+                Endereço de e-mail<span className="asterisk">*</span>
               </label>
               <input
                 type="email"

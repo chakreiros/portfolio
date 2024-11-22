@@ -15,7 +15,7 @@ export default function Home() {
       <Header />
       <Banner />
       <Separator />
-      <main className="max-w-[153.6rem] flex flex-col self-center shadow-lg">
+      <main className="max-w-[153.6rem] w-full flex flex-col self-center shadow-lg">
         <section
           id="glimpse-features"
           className="h-fit flex flex-col justify-center gap-20"
@@ -23,8 +23,8 @@ export default function Home() {
           <FeatureCard />
         </section>
         <Separator />
-        <section className="flex p-10 gap-10">
-          <div className="flex flex-col w-full items-center gap-24 p-10 bg-description_graphic_element bg-right-bottom bg-auto bg-no-repeat h-[70vh]">
+        <section className="p-10 gap-10 flex">
+          <div className="flex flex-col w-full items-center gap-24 p-10 bg-description_graphic_element bg-right-bottom bg-contain bg-no-repeat max-sm:bg-gradient-to-t from-[#367f2d] to-[#b6cd9f] max-sm:rounded-xl  max-sm:shadow-2xl">
             <h2 className="uppercase">
               Mais que lugares, <br /> experiências...
             </h2>

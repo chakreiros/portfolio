@@ -70,7 +70,7 @@ export function FeatureCard() {
       {features.map((feature, index) => (
         <Card
           key={index}
-          className="flex flex-col items-center w-1/3 max-w-[29.7rem] h-[17.6rem] shadow-2xl hover:scale-105 ease-in-out duration-300 border-[#41693c] rounded-xl"
+          className="flex flex-col items-center w-1/3 max-w-[60rem] h-[20rem] shadow-2xl hover:scale-105 ease-in-out duration-300 border-[#41693c] rounded-xl"
         >
           <CardTitle className="border border-[#41693c] relative rounded-full p-4 -top-14 bg-white">
             {React.createElement(iconComponents[feature.icon], {
@@ -103,14 +103,11 @@ export function FeatureAccordion() {
         <Accordion key={index} type="single" collapsible className="w-full">
           <AccordionItem value={`item-${index}`} id={feature.id}>
             <AccordionTrigger>
-              <h3 className="whitespace-nowrap w-[75vw] overflow-hidden overflow-ellipsis text-left">
+              <p className="whitespace-nowrap w-[75vw] overflow-hidden overflow-ellipsis text-left text-[2.6rem]">
                 {feature.title}
-              </h3>
+              </p>
             </AccordionTrigger>
-            <AccordionContent
-              id="AccordionContent"
-              className="leading-10 font-[garet book] "
-            >
+            <AccordionContent id="AccordionContent">
               {feature.description}
             </AccordionContent>
           </AccordionItem>

@@ -12,6 +12,7 @@
 }
 
 :root {
+  --openSans: "open sans", sans-serif;
   --garetHeavy: "garet heavy", sans-serif;
   --garetBook: "garet book", sans-serif;
 
@@ -21,8 +22,18 @@
   font-family: var(--garetHeavy);
 }
 
-* {
+body {
   font-size: 1.6rem;
+  font-family: var(--openSans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--garetHeavy);
 }
 
 h1 {
@@ -39,19 +50,18 @@ h3 {
 }
 
 p {
-  font-family: var(--garetBook);
-  font-weight: 800;
 }
 
 #mc_embed_signup {
   width: 100%;
   min-width: 40rem;
   clear: left;
-  font: 14px Helvetica, Arial, sans-serif;
 }
 
 #AccordionContent {
   font-family: var(--garetBook);
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
 
 #banner {
