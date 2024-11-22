@@ -2,14 +2,14 @@
 import React from "react";
 
 //#region ui components
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardFooter, CardTitle } from "@/components/ui/card";
+import { Button } from "@/Components/ui/button";
+import { Card, CardContent, CardFooter, CardTitle } from "@/Components/ui/card";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from "@/Components/ui/accordion";
 //#endregion
 
 //#region icons

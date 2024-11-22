@@ -1,12 +1,11 @@
 //#region imports
-import Banner from "@/components/Banner";
-import SocialProof from "@/components/SocialProof";
+import { FeatureCard, FeatureAccordion } from "@/Components/Features";
+import SocialProof from "@/Components/SocialProof";
+import Form from "@/Components/Form";
+import Header from "@/Components/Header";
+import Banner from "@/Components/Banner";
 
-import { FeatureCard, FeatureAccordion } from "@/components/Features";
-import Form from "@/components/Form";
-import Header from "@/components/Header";
-
-import { Separator } from "@/components/ui/separator";
+import { Separator } from "@/Components/ui/separator";
 
 import asideDescription from "@/assets/images/aside-description.jpg";
 //#endregion

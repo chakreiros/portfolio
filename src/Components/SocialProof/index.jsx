@@ -8,7 +8,7 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from "@/Components/ui/carousel";
 //#endregion
 //#region images
 import bellyLogo from "@/assets/images/costumers/belly/logo-belly.jpg";
