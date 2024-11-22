@@ -39,7 +39,7 @@ const features = [
   {
     id: "photos",
     icon: "FaCamera",
-    title: "fotos e vídeos profissionais",
+    title: "Fotos e vídeos profissionais",
     description:
       "A qualidade visual do seu conteúdo faz toda a diferença. Por isso, nossa landing page conta com fotos e vídeos profissionais que destacam o melhor do seu produto ou serviço. Cada imagem e vídeo é escolhido e produzido com cuidado, garantindo uma apresentação elegante e atraente. Isso não só melhora a estética do seu site, mas também ajuda a transmitir a credibilidade e o profissionalismo da sua marca.",
   },
@@ -102,10 +102,14 @@ export function FeatureAccordion() {
       {features.map((feature, index) => (
         <Accordion key={index} type="single" collapsible className="w-full">
           <AccordionItem value={`item-${index}`} id={feature.id}>
-            <AccordionTrigger>{feature.title}</AccordionTrigger>
+            <AccordionTrigger>
+              <h3 className="whitespace-nowrap w-[75vw] overflow-hidden overflow-ellipsis text-left">
+                {feature.title}
+              </h3>
+            </AccordionTrigger>
             <AccordionContent
               id="AccordionContent"
-              className="leading-10 font-[garet book]"
+              className="leading-10 font-[garet book] "
             >
               {feature.description}
             </AccordionContent>
