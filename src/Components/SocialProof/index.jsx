@@ -20,6 +20,7 @@ import voOrlandoLogo from "@/assets/images/costumers/vo-orlando/logo-vo-orlando.
 import voOrlando1 from "@/assets/images/costumers/vo-orlando/vo-orlando(1).jpg";
 import voOrlando2 from "@/assets/images/costumers/vo-orlando/vo-orlando(2).jpg";
 import voOrlando3 from "@/assets/images/costumers/vo-orlando/vo-orlando(3).jpg";
+import { Separator } from "../ui/separator";
 //#endregion
 //#endregion
 export default function SocialProof() {
@@ -50,21 +51,21 @@ export default function SocialProof() {
         <div className="text-center">
           <img
             src={bellyLogo}
-            className="rounded-full w-[33vh] m-auto max-md:max-w-[25vw]"
+            className="rounded-full w-[25rem] m-auto max-lg:max-w-[25vw]"
           />
-          <h3 className="max-md:text-[2rem]">Chácara Belly</h3>
+          <h3 className="max-lg:text-[2rem]">Chácara Belly</h3>
         </div>
         <div className="text-center">
           <img
             src={voOrlandoLogo}
-            className="rounded-full w-[33vh] m-auto max-md:max-w-[25vw]"
+            className="rounded-full w-[25rem] m-auto max-lg:max-w-[25vw]"
           />
-          <h3 className="max-md:text-[2rem]">Chácara do Vô Orlando</h3>
+          <h3 className="max-lg:text-[2rem]">Chácara do Vô Orlando</h3>
         </div>
       </div>
-      <div className="flex justify-center items-center align-middle w-fit h-[33vh] gap-10">
+      <div className="flex justify-center items-center align-middle gap-10">
         <Carousel
-          className="w-fit h-full relative"
+          className="w-fit h-full "
           plugins={[plugin.current]}
           onMouseEnter={plugin.current.stop}
           onMouseLeave={plugin.current.reset}
@@ -75,7 +76,7 @@ export default function SocialProof() {
                 <div>
                   <img
                     src={bellyImages[index]}
-                    className="max-w-1/3 max-md:max-w-full"
+                    className="max-w-1/3 max-lg:max-w-full"
                     onClick={() => openModal(bellyImages[index])}
                   />
                 </div>
@@ -84,18 +85,18 @@ export default function SocialProof() {
           </CarouselContent>
         </Carousel>
         <Carousel
-          className="w-fit h-full relative"
+          className="w-fit h-full "
           plugins={[plugin2.current]}
           onMouseEnter={plugin2.current.stop}
           onMouseLeave={plugin2.current.reset}
         >
-          <CarouselContent className="relative">
+          <CarouselContent>
             {Array.from({ length: voOrlandoImages.length }).map((_, index) => (
               <CarouselItem key={index}>
                 <div>
                   <img
                     src={voOrlandoImages[index]}
-                    className="max-w-1/3 max-md:max-w-full"
+                    className="max-w-1/3 max-lg:max-w-full"
                     onClick={() => openModal(voOrlandoImages[index])}
                   />
                 </div>
@@ -119,6 +120,7 @@ export default function SocialProof() {
           )}
         </Modal>
       </div>
+      <Separator />
     </section>
   );
 }
