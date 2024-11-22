@@ -7,7 +7,7 @@ import chakreirosLogo from "@/assets/images/chakreiros.png";
 //#region icons
 import { IoLogoWhatsapp } from "react-icons/io";
 import { AiFillInstagram } from "react-icons/ai";
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
 //#endregion
 //#endregion
 
@@ -17,7 +17,7 @@ export default function Form() {
   const [phone, setPhone] = useState("");
 
   return (
-    <div className="flex p-10 justify-around bg-[#dbe1c8]">
+    <div className="flex p-10 justify-around items-center bg-[#dbe1c8]">
       <div className="flex flex-col items-center text-center gap-10">
         <img
           src={chakreirosLogo}
@@ -28,13 +28,28 @@ export default function Form() {
         <h3 className="text-[#36802d]">Mais do que lugares... Experiências!</h3>
 
         <div className="flex justify-around gap-10">
-          <IoLogoWhatsapp size="3em" className="text-[#36802d]" />
-          <AiFillInstagram size="3em" className="text-[#36802d]" />
-          <FaFacebook size="3em" className="text-[#36802d]" />
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send/?phone=5519991841341"
+          >
+            <IoLogoWhatsapp size="3em" className="text-[#36802d]" />
+          </a>
+          <a target="_blank" href="https://www.instagram.com/chakreiros/">
+            <AiFillInstagram size="3em" className="text-[#36802d]" />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/people/Chakreiros/61568862191978"
+          >
+            <FaFacebook size="3em" className="text-[#36802d]" />
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/company/chakreiros">
+            <FaLinkedin size="3em" className="text-[#36802d]" />
+          </a>
         </div>
       </div>
       <div id="mc_embed_shell">
-        <div id="mc_embed_signup">
+        <div id="mc_embed_signup" className="p-10 bg-[#b6cd9f] rounded-xl">
           <form
             action="https://chakreiros.us15.list-manage.com/subscribe/post?u=a24e6ffbf8c4e00d5bbc47274&amp;id=016c7ea8c6&amp;f_id=00b7b7e0f0"
             method="post"
@@ -65,7 +80,9 @@ export default function Form() {
               />
             </div>
             <div className="mc-field-group">
-              <label htmlFor="mce-FNAME">Nome </label>
+              <label htmlFor="mce-FNAME">
+                Nome <span className="asterisk">*</span>
+              </label>
               <input
                 type="text"
                 name="FNAME"
@@ -73,10 +90,13 @@ export default function Form() {
                 id="mce-FNAME"
                 value={name}
                 onChange={e => setName(e.target.value)}
+                required
               />
             </div>
             <div className="mc-field-group">
-              <label htmlFor="mce-PHONE">Telefone </label>
+              <label htmlFor="mce-PHONE">
+                Telefone <span className="asterisk">*</span>
+              </label>
               <input
                 type="text"
                 name="PHONE"
@@ -84,6 +104,7 @@ export default function Form() {
                 id="mce-PHONE"
                 value={phone}
                 onChange={e => setPhone(e.target.value)}
+                required
               />
             </div>
             <input
