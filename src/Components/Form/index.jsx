@@ -25,7 +25,7 @@ export default function Form() {
           className="h-auto w-[25rem]"
         />
 
-        <p className="text-[#36802d] text-[2.2rem]">
+        <p className="text-green_2 text-[2.2rem]">
           Mais do que lugares... Experiências!
         </p>
 
@@ -34,19 +34,19 @@ export default function Form() {
             target="_blank"
             href="https://api.whatsapp.com/send/?phone=5519991841341"
           >
-            <IoLogoWhatsapp size="3em" className="text-[#36802d]" />
+            <IoLogoWhatsapp size="3em" className="text-green_2" />
           </a>
           <a target="_blank" href="https://www.instagram.com/chakreiros/">
-            <AiFillInstagram size="3em" className="text-[#36802d]" />
+            <AiFillInstagram size="3em" className="text-green_2" />
           </a>
           <a
             target="_blank"
             href="https://www.facebook.com/people/Chakreiros/61568862191978"
           >
-            <FaFacebook size="3em" className="text-[#36802d]" />
+            <FaFacebook size="3em" className="text-green_2" />
           </a>
           <a target="_blank" href="https://www.linkedin.com/company/chakreiros">
-            <FaLinkedin size="3em" className="text-[#36802d]" />
+            <FaLinkedin size="3em" className="text-green_2" />
           </a>
         </div>
       </div>

@@ -15,6 +15,13 @@ export default {
         description_graphic_element:
           "url('/src/assets/images/description-graph-element.png')",
       },
+      colors: {
+        green_1: "#234d20",
+        green_2: "#36802d",
+        green_3: "#77ab59",
+        green_4: "#c9df8a",
+        green_5: "#f0f7da",
+      },
       keyframes: {
         "accordion-down": {
           from: {
