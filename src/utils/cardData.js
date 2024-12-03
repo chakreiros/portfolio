@@ -18,9 +18,7 @@ export default [
       size: "900m²",
       host_capacity: "100 pessoas",
       event_capacity: "100 pessoas",
-      description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quis id provident facilis praesentium necessitatibus placeat repudiandae veniam quae similique perferendis distinctio molestias, eos est unde corrupti tempora sit quidem?",
-      locality: "R. 7 JA, 847 - Jardim America, Rio Claro - SP, 13506-031",
+      description: "",
       furniture: true,
       barbecue_area: true,
       cooking_area: true,
