@@ -48,17 +48,17 @@ export default function SpacePage() {
           onMouseEnter={plugin.current.stop}
           onMouseLeave={plugin.current.reset}
         >
-          <CarouselContent className="basis-1/2">
+          <CarouselContent>
             {data.images.map((image, index) => (
-              <CarouselItem key={index} className="basis-1/3">
+              <CarouselItem key={index} className="xl:basis-1/3">
                 <img src={image} alt={data.title} />
               </CarouselItem>
             ))}
           </CarouselContent>
         </Carousel>
 
-        <div className="flex gap-10">
-          <section className="border border-gray rounded-xl m-10 p-10 w-fit max-w-[50vw]">
+        <div className="flex gap-10 max-sm:flex-col">
+          <section className="border border-gray rounded-xl m-10 p-10 w-fit max-w-[50vw] max-md:max-w-full">
             <h2>Informações</h2>
             <ul>
               <li>Área: {info.size}</li>
