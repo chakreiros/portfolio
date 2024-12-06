@@ -131,9 +131,12 @@ export default function SpacePage() {
               </ul>
             </div>
           </section>
-          <section className="border border-gray rounded-xl m-10 p-10 w-fit max-w-[50vw]">
-            <div className="w-[50vw] h-full flex items-center">
-              <h3 className="w-full text-center">Agenda em breve disponível</h3>
+          <section className=" m-10 p-10 w-fit max-w-[50vw]">
+            <div
+              className="w-[50vw] h-full flex items-center"
+              dangerouslySetInnerHTML={{ __html: data.scheduler_tag }}
+            >
+              {}
             </div>
           </section>
         </div>
