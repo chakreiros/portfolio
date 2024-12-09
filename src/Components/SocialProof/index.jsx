@@ -12,10 +12,10 @@ import {
 //#endregion
 //#region images
 import bellyLogo from "@/assets/images/costumers/belly/logo-belly.jpg";
-import belly from "@/assets/images/costumers/belly/Belly.jpg";
-import belly1 from "@/assets/images/costumers/belly/Belly(1).jpg";
-import belly2 from "@/assets/images/costumers/belly/Belly(2).jpg";
-import belly3 from "@/assets/images/costumers/belly/Belly(3).jpg";
+import belly from "@/assets/images/costumers/belly/IMG_4205.jpg";
+// import belly1 from "@/assets/images/costumers/belly/IMG_4212.heic";
+// import belly2 from "@/assets/images/costumers/belly/IMG_4225.heic";
+// import belly3 from "@/assets/images/costumers/belly/IMG_4227.heic";
 import voOrlandoLogo from "@/assets/images/costumers/vo-orlando/logo-vo-orlando.jpg";
 import voOrlando1 from "@/assets/images/costumers/vo-orlando/vo-orlando(1).jpg";
 import voOrlando2 from "@/assets/images/costumers/vo-orlando/vo-orlando(2).jpg";
@@ -27,17 +27,17 @@ export default function SocialProof() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const bellyImages = [belly, belly1, belly2, belly3];
+  const bellyImages = [belly];
   const voOrlandoImages = [voOrlando1, voOrlando2, voOrlando3];
 
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true }),
+    Autoplay({ delay: 2000, stopOnInteraction: true })
   );
   const plugin2 = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true }),
+    Autoplay({ delay: 2000, stopOnInteraction: true })
   );
 
-  const openModal = (image) => {
+  const openModal = image => {
     setSelectedImage(image);
     setIsModalOpen(true);
   };
