@@ -9,15 +9,15 @@ import belly5 from "@/assets/images/costumers/belly/IMG_4242.jpg";
 import belly6 from "@/assets/images/costumers/belly/IMG_4257.jpg";
 import belly7 from "@/assets/images/costumers/belly/IMG_4279.jpg";
 // import belly8 from "@/assets/images/costumers/belly/IMG_4283.jpg";
-// import belly9 from "@/assets/images/costumers/belly/IMG_4307.jpg";
-// import belly10 from "@/assets/images/costumers/belly/IMG_4318.jpg";
-// import belly11 from "@/assets/images/costumers/belly/IMG_4336.jpg";
-// import belly12 from "@/assets/images/costumers/belly/IMG_4338.jpg";
-// import belly13 from "@/assets/images/costumers/belly/IMG_4340.jpg";
-// import belly14 from "@/assets/images/costumers/belly/IMG_4341.jpg";
-// import belly15 from "@/assets/images/costumers/belly/IMG_4345.jpg";
-// import belly16 from "@/assets/images/costumers/belly/IMG_4350.jpg";
-// import belly17 from "@/assets/images/costumers/belly/IMG_4352.jpg";
+import belly9 from "@/assets/images/costumers/belly/IMG_4307.jpg";
+import belly10 from "@/assets/images/costumers/belly/IMG_4318.jpg";
+import belly11 from "@/assets/images/costumers/belly/IMG_4336.jpg";
+import belly12 from "@/assets/images/costumers/belly/IMG_4338.jpg";
+import belly13 from "@/assets/images/costumers/belly/IMG_4340.jpg";
+import belly14 from "@/assets/images/costumers/belly/IMG_4341.jpg";
+import belly15 from "@/assets/images/costumers/belly/IMG_4345.jpg";
+import belly16 from "@/assets/images/costumers/belly/IMG_4350.jpg";
+import belly17 from "@/assets/images/costumers/belly/IMG_4352.jpg";
 import belly18 from "@/assets/images/costumers/belly/IMG_4364.jpg";
 import belly19 from "@/assets/images/costumers/belly/IMG_4366.jpg";
 import belly20 from "@/assets/images/costumers/belly/IMG_4380.jpg";
@@ -75,15 +75,15 @@ export default [
       belly6,
       belly7,
       // belly8,
-      // belly9,
-      // belly10,
-      // belly11,
-      // belly12,
-      // belly13,
-      // belly14,
-      // belly15,
-      // belly16,
-      // belly17,
+      belly9,
+      belly10,
+      belly11,
+      belly12,
+      belly13,
+      belly14,
+      belly15,
+      belly16,
+      belly17,
       belly18,
       belly19,
       belly20,
