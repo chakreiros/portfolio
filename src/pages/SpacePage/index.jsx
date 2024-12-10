@@ -27,7 +27,7 @@ export default function SpacePage() {
   const info = data.info;
 
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true }),
+    Autoplay({ delay: 2000, stopOnInteraction: true })
   );
 
   return (
@@ -62,7 +62,7 @@ export default function SpacePage() {
             <h2>Informações</h2>
             <ul>
               <li>Área: {info.size}</li>
-              <li>Capacidade de hospedagem: {info.host_capacity}</li>
+              <li>{info.hosting ? <FaCheck /> : <MdBlock />}Hospedagem</li>
               <li>Capacidade para eventos: {info.event_capacity}</li>
               <li>
                 Localidade:

@@ -37,20 +37,22 @@ export default [
     title: "Chácara Belly",
     info: {
       size: "Meio Quarteirão",
-      host_capacity: "120 pessoas",
+      hosting: true,
       event_capacity: "120 pessoas",
       description: `Localizada em um amplo espaço que ocupa meio quarteirão, a Chácara Belly é perfeita para celebrações familiares e eventos tranquilos. Seu salão para até 120 pessoas, com área gourmet equipada com churrasqueira, fogão industrial e geladeira duplex, oferece o espaço ideal para confraternizações com praticidade e charme.
+      Freezer duplo, geladeira duplex" dar um jeito de inserir com outras palavras (Espaço em refrigeradores).
+      A piscina cercada e segura, o parque infantil e o campo de futebol tornam-se o local completo para todas as idades. Além disso, contamos com um quarto aconchegante, banheiros com duchas quentes e estacionamento para motos. Para quem deseja personalizar ainda mais seu evento, temos parcerias com decoradores, locação de brinquedos e jogos de mesa.
+      Com iluminação noturna de qualidade e ambiente pensado para momentos familiares, a Chácara Belly é um refúgio de tranquilidade e diversão. Confira as fotos desse espaço encantador e reserve agora para criar memórias inesquecíveis!
+      Estacionamento para moto.
 
-A piscina cercada e segura, o parque infantil e o campo de futebol tornam-se o local completo para todas as idades. Além disso, contamos com um quarto aconchegante, banheiros com duchas quentes e estacionamento para motos. Para quem deseja personalizar ainda mais seu evento, temos parcerias com decoradores, locação de brinquedos e jogos de mesa.
-
-Com iluminação noturna de qualidade e ambiente pensado para momentos familiares, a Chácara Belly é um refúgio de tranquilidade e diversão. Confira as fotos desse espaço encantador e reserve agora para criar memórias inesquecíveis!`,
+`,
       locality: [
         " R. 7 JA, 847 - Jardim America, Rio Claro - SP, 13506-031",
         "https://g.co/kgs/nbXDFXk",
       ],
       pool: {
         havePool: true,
-        size: "1,60 m",
+        size: "(cercada e segura) - 1,60 m",
       },
       wifi: false,
       pet: true,
